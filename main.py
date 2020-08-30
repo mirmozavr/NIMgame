@@ -68,9 +68,9 @@ while True:
         print_rules()
         while True:
             time.sleep(0.6)
-            print('Сколько палочек на старте? Введите число.')
+            print('Сколько палочек на старте? Введите число больше 19')
             sticks = input()
-            if not sticks.isdigit() or 1 > int(sticks):
+            if not sticks.isdigit() or 20 > int(sticks):
                 time.sleep(0.6)
                 print('Попробуйте еще раз.')
             else:
