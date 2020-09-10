@@ -14,6 +14,7 @@ def game(count, F):
     x = [3, 1, 1,2]
     time.sleep(0.6)
     print('Палочек', count)
+    print(count * '| ')
     while True:
         if F:
             if count == 1:
@@ -25,6 +26,7 @@ def game(count, F):
                 time.sleep(0.6)
                 print('Я беру', take)
                 print('Осталось', count - take)
+                print((count - take) * '| ')
                 count -= take
                 F = not F
 
@@ -51,6 +53,7 @@ def game(count, F):
                         time.sleep(0.6)
                         print('Вы берете', take)
                         print('Осталось', count - take)
+                        print((count - take) * '| ')
                         count -= take
                         F = not F
                         break
